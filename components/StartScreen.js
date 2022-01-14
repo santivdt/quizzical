@@ -1,6 +1,6 @@
 const StartScreen = ({ toggleQuiz, handleChange, numberOfQuestions }) => {
   return (
-    <div class="container-startscreen">
+    <div className="container-startscreen">
       <h1>Quizzical</h1>
       <h3>A Scrimba exercise</h3>
       <p className="body-text">How many questions do you want to answer?</p>

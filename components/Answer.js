@@ -8,7 +8,6 @@ const Answer = ({
   busyChecking,
   question,
 }) => {
-  console.log(question, "question")
   return (
     <>
       {answers.map(answer => {

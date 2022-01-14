@@ -80,7 +80,7 @@ const Quiz = ({ toggleQuiz, numberOfQuestions }) => {
   }
 
   return (
-    <>
+    <div>
       {loading ? (
         "Loading ..."
       ) : (
@@ -90,10 +90,11 @@ const Quiz = ({ toggleQuiz, numberOfQuestions }) => {
           busyChecking={busyChecking}
         />
       )}
+      <div className="info-container">
       {busyChecking && (
-        <span className="body-text">
+        <p className="body-text">
           You scored {score} / {numberOfQuestions}
-        </span>
+        </p>
       )}
 
       {busyChecking ? (
@@ -113,7 +114,8 @@ const Quiz = ({ toggleQuiz, numberOfQuestions }) => {
           Check Answers
         </button>
       )}
-    </>
+      </div>
+    </div>
   )
 }
 
